@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-forest: #173d32;
+    --color-forest-dark: #102b24;
+    --color-cream: #f8f8f4;
+    --color-sage: #e6eee7;
+    --color-mint: #bde8cf;
+    --color-ink: #17211d;
+    --color-muted: #66736b;
+    --color-line: #dde5dd;
+    --color-white: #ffffff;
+    --radius-md: 0.75rem;
+    --radius-lg: 1.25rem;
+    --shadow-soft: 0 10px 30px -12px rgba(16, 43, 36, 0.18);
+  }
+
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5.5rem;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+
+  body {
+    @apply bg-cream font-sans text-ink antialiased;
+    background-image:
+      radial-gradient(ellipse 80% 50% at 10% -10%, rgba(189, 232, 207, 0.45), transparent 55%),
+      radial-gradient(ellipse 60% 40% at 100% 0%, rgba(230, 238, 231, 0.9), transparent 50%),
+      linear-gradient(180deg, #f8f8f4 0%, #f3f6f3 40%, #f8f8f4 100%);
+    background-attachment: fixed;
+    min-height: 100vh;
+  }
+
+  ::selection {
+    background: rgba(189, 232, 207, 0.7);
+    color: #102b24;
+  }
+
+  :focus-visible {
+    @apply outline-none ring-2 ring-forest/40 ring-offset-2 ring-offset-cream;
+  }
+}
+
+@layer components {
+  .page-shell {
+    @apply min-h-screen flex flex-col;
+  }
+
+  .section-pad {
+    @apply px-4 sm:px-6 lg:px-8;
+  }
+
+  .prose-legal {
+    @apply max-w-3xl space-y-5 text-muted leading-relaxed;
+  }
+
+  .prose-legal h2 {
+    @apply mt-10 text-xl font-semibold text-ink;
+  }
+
+  .prose-legal h3 {
+    @apply mt-6 text-lg font-semibold text-ink;
+  }
+
+  .prose-legal p,
+  .prose-legal li {
+    @apply text-[15px] sm:text-base;
+  }
+
+  .prose-legal ul {
+    @apply list-disc space-y-2 pl-5;
+  }
+
+  .mock-chrome {
+    @apply overflow-hidden rounded-2xl border border-line bg-white shadow-soft;
+  }
+
+  .eyebrow {
+    @apply text-xs font-semibold tracking-[0.18em] text-forest uppercase;
+  }
+}

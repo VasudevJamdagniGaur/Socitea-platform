@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" fill="none">
+  <rect width="1200" height="630" fill="#F8F8F4"/>
+  <circle cx="980" cy="120" r="220" fill="#BDE8CF" fill-opacity="0.45"/>
+  <circle cx="180" cy="520" r="180" fill="#E6EEE7"/>
+  <rect x="80" y="80" width="72" height="72" rx="20" fill="#173D32"/>
+  <path d="M98 112c0-2.8 2.2-5 5-5h22c2.8 0 5 2.2 5 5v12c0 6.6-5.4 12-12 12h-8c-6.6 0-12-5.4-12-12v-12Z" fill="#BDE8CF"/>
+  <text x="176" y="132" fill="#102B24" font-family="Georgia, serif" font-size="48" font-weight="650">SociTea</text>
+  <text x="80" y="280" fill="#17211D" font-family="Georgia, serif" font-size="72" font-weight="650">Your ideas deserve</text>
+  <text x="80" y="360" fill="#17211D" font-family="Georgia, serif" font-size="72" font-weight="650">a bigger audience.</text>
+  <text x="80" y="430" fill="#66736B" font-family="Arial, sans-serif" font-size="28">Discover. Create. Share.</text>
+</svg>

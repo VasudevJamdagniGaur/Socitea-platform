@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# Do not invent a domain — replace Sitemap when VITE_WEBSITE_URL is set.
+# Sitemap: https://your-verified-domain.example/sitemap.xml
+
+Disallow: /404
