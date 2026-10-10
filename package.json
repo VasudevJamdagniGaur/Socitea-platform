@@ -7,7 +7,10 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "preview": "vite preview",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "morphos": "npm --prefix morphos-site run dev",
+    "morphos:build": "npm --prefix morphos-site run build",
+    "morphos:preview": "npm --prefix morphos-site run preview"
   },
   "dependencies": {
     "framer-motion": "^12.23.12",

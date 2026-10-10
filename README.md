@@ -18,6 +18,20 @@ npm run build
 npm run preview
 ```
 
+## SociTea immersive site (Morphos shell)
+
+Black-background SociTea experience with routed pages:
+
+```bash
+npm run morphos
+```
+
+Open [http://127.0.0.1:5180](http://127.0.0.1:5180).
+
+Routes: `/` `/features` `/discover` `/create` `/extension` `/download`
+
+Details in `morphos-site/README.md`.
+
 ## Product URLs
 
 All download and product destinations are configured in:
